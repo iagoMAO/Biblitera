@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="64.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="64.0" prefWidth="150.0" style="-fx-alignment: center; -fx-font-smoothing-type: gray;" styleClass="biblitera-logo" text="biblitera." textFill="#1f2947">
+         <font>
+            <Font name="Fredoka Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeLink" layoutX="150.0" prefHeight="64.0" prefWidth="150.0" style="-fx-alignment: center;" styleClass="biblitera-logo" text="início" textFill="#1f2947">
+         <font>
+            <Font name="Source Sans 3 Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="booksLink" layoutX="300.0" opacity="0.0" prefHeight="64.0" prefWidth="150.0" style="-fx-alignment: center;" styleClass="biblitera-logo" text="livros" textFill="#1f2947">
+         <font>
+            <Font name="Source Sans 3 Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="navUserName" layoutX="1129.0" prefHeight="64.0" prefWidth="150.0" style="-fx-alignment: center;" styleClass="biblitera-logo" text="olá, {nome}" textFill="#1f2947">
+         <font>
+            <Font name="Source Sans 3 Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="acervoLink" layoutX="917.0" prefHeight="64.0" prefWidth="213.0" style="-fx-alignment: center;" styleClass="biblitera-logo" text="controle de administrador" textFill="#1f2947">
+         <font>
+            <Font name="Source Sans 3 Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

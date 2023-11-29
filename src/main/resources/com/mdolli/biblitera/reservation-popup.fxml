@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 0% 0% , radius 300% , #C2C4F88F, #FFFFFF);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="33.0" layoutY="25.0">
+         <children>
+            <ImageView fx:id="bookCover" fitHeight="250.0" fitWidth="155.0" pickOnBounds="true" styleClass="book-cover">
+               <image>
+                  <Image url="@images/book.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="250.0" prefWidth="378.0">
+               <children>
+                  <VBox prefHeight="250.0">
+                     <children>
+                        <Label alignment="TOP_LEFT" prefHeight="14.0" prefWidth="378.0" text="Você gostaria de reservar este livro?" textFill="#1f2947">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label fx:id="bookName" alignment="TOP_LEFT" prefHeight="54.0" prefWidth="373.0" text="É Assim que Acaba" textFill="#1f2947" wrapText="true">
+                                       <font>
+                                          <Font name="Source Sans 3 Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="bookAuthor" layoutY="54.400001525878906" prefHeight="26.0" prefWidth="319.0" text="Colleen Hoover" textFill="#1e2945a1">
+                                       <font>
+                                          <Font name="Source Sans 3 Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                           </children>
+                        </VBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="250.0" prefWidth="378.0" spacing="15.0">
+                           <children>
+                              <Button fx:id="confirmButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="531.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #7B7EED;" text="sim" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="dismissButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="531.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #545187;" text="não" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

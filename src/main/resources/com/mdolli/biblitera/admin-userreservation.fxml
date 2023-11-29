@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="CENTER_LEFT" prefHeight="80.0" styleClass="admin-button" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <ImageView fx:id="bookCover" fitHeight="60.0" fitWidth="40.0" pickOnBounds="true" styleClass="book-cover">
+               <image>
+                  <Image url="@images/book.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="312.0">
+               <children>
+                  <Label fx:id="bookName" prefHeight="26.0" prefWidth="330.0" text="É Assim que Acaba">
+                     <font>
+                        <Font name="Source Sans 3 Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bookAuthor" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="358.0" text="É Assim que Acaba" textFill="#1e2945a1">
+                     <font>
+                        <Font name="Source Sans 3 Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </VBox>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="80.0" prefWidth="240.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="237.0" text="Data de Empréstimo">
+                     <font>
+                        <Font name="Source Sans 3 Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateBorrow" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="358.0" text="Pendente" textFill="#1e2945a1">
+                     <font>
+                        <Font name="Source Sans 3 Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="240.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="235.0" text="Devolução Esperada">
+                     <font>
+                        <Font name="Source Sans 3 Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateExpectedDev" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="358.0" text="Pendente" textFill="#1e2945a1">
+                     <font>
+                        <Font name="Source Sans 3 Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="453.0" layoutY="10.0" prefHeight="80.0" prefWidth="240.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="330.0" text="Devolução Efetiva">
+                     <font>
+                        <Font name="Source Sans 3 Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateEffectiveDev" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="358.0" text="Pendente" textFill="#1e2945a1">
+                     <font>
+                        <Font name="Source Sans 3 Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="1037.0" layoutY="10.0" prefHeight="80.0" prefWidth="202.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="330.0" text="Status">
+                     <font>
+                        <Font name="Source Sans 3 Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="358.0" text="Pendente" textFill="#1e2945a1">
+                     <font>
+                        <Font name="Source Sans 3 Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</StackPane>

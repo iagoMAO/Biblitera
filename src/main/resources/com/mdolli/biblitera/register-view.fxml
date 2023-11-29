@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="720.0" maxWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mdolli.biblitera.controllers.RegisterController">
+  <children>
+    <AnchorPane maxHeight="720.0" maxWidth="1820.0" minHeight="720.0" minWidth="1280.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 0% 0% , radius 300% , #C2C4F88F, #FFFFFF);" VBox.vgrow="NEVER">
+         <children>
+            <AnchorPane fx:id="rootPane" layoutX="-275.0" layoutY="-321.0">
+               <children>
+                  <Pane layoutX="275.0" layoutY="321.0" maxHeight="720.0" maxWidth="640.0" minHeight="720.0" minWidth="640.0" prefHeight="720.0" prefWidth="640.0">
+                     <children>
+                        <Circle layoutX="46.0" radius="321.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.7372549176216125" blue="0.30980393290519714" opacity="0.8500000238418579" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.006729475100942127">
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.7372549176216125" blue="0.30980393290519714" opacity="0.8500000238418579" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.9599999785423279" green="0.23999999463558197" blue="0.4560000002384186" opacity="0.4495745003223419" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="363.0" layoutY="356.0" radius="121.0" scaleX="3.0" scaleY="3.0" scaleZ="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8969583511352539" green="0.31349998712539673" blue="0.949999988079071" opacity="0.8487842082977295" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.23999999463558197" green="0.36000001430511475" blue="0.9599999785423279" opacity="0.7879939079284668" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Label layoutX="108.0" layoutY="272.0" prefHeight="65.0" prefWidth="550.0" style="-fx-text-alignment: center; -fx-alignment: center;" text="Bem-vindo!" textFill="#ffffff98">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="54.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="351.0" prefHeight="110.0" prefWidth="550.0" style="-fx-alignment: center; -fx-text-alignment: center;" text="Com o                     , organizar reservas de livros nunca foi tão fácil." textFill="#ffffff98" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="362.0" prefHeight="39.0" prefWidth="126.0" style="-fx-alignment: center; -fx-text-alignment: center;" text="biblitera" textFill="#ffffff98" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="Fredoka Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="64.0" prefWidth="150.0" style="-fx-alignment: center; -fx-font-smoothing-type: gray;" styleClass="biblitera-logo" text="biblitera." textFill="#1e294586">
+                           <font>
+                              <Font name="Fredoka Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="915.0" layoutY="321.0" maxHeight="720.0" maxWidth="640.0" minHeight="720.0" minWidth="640.0" prefHeight="720.0" prefWidth="640.0">
+                     <children>
+                        <Pane layoutX="123.0" layoutY="42.0" prefHeight="642.0" prefWidth="440.0">
+                           <children>
+                              <TextField fx:id="nameField" layoutY="114.0" prefHeight="18.0" prefWidth="440.0" style="-fx-background-color: #FFFFFF55; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: none; -fx-padding: 15px;">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutY="-2.0" prefHeight="65.0" prefWidth="550.0" text="Cadastro" textFill="#0a0c12bf">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="32.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="44.0" prefHeight="35.0" prefWidth="440.0" text="Crie a sua conta para utilizar o biblitera." textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="79.0" prefHeight="35.0" prefWidth="530.0" text="nome completo" textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="331.0" prefHeight="35.0" prefWidth="530.0" text="sua senha" textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="registerButton" layoutY="519.0" mnemonicParsing="false" onAction="#registerButtonOnActionEvent" prefHeight="30.0" prefWidth="440.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #7B7EED;" text="cadastrar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="loginButton" alignment="CENTER" layoutY="569.0" onMouseClicked="#loginButtonOnMouseClicked" prefHeight="76.0" prefWidth="440.0" text="já tenho uma conta..." textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="passwordField" layoutX="-1.0" layoutY="366.0" prefHeight="18.0" prefWidth="440.0" style="-fx-background-color: #FFFFFF55; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: none; -fx-padding: 15px;">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </PasswordField>
+                              <TextField fx:id="emailField" layoutX="-1.0" layoutY="198.0" prefHeight="18.0" prefWidth="440.0" style="-fx-background-color: #FFFFFF55; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: none; -fx-padding: 15px;">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="9.0" layoutY="163.0" prefHeight="35.0" prefWidth="530.0" text="endereço e-mail" textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="cpfField" layoutX="-1.0" layoutY="282.0" prefHeight="18.0" prefWidth="440.0" style="-fx-background-color: #FFFFFF55; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: none; -fx-padding: 15px;">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="9.0" layoutY="247.0" prefHeight="35.0" prefWidth="530.0" text="cpf" textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="415.0" prefHeight="35.0" prefWidth="530.0" text="confirme sua senha" textFill="#06090d66" wrapText="true">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="confirmPasswordField" layoutX="-1.0" layoutY="450.0" prefHeight="18.0" prefWidth="440.0" style="-fx-background-color: #FFFFFF55; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: none; -fx-padding: 15px;">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

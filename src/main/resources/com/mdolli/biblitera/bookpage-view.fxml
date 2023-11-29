@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="720.0" maxWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane fx:id="rootPane" maxHeight="720.0" maxWidth="1820.0" minHeight="720.0" minWidth="1280.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 0% 0% , radius 300% , #C2C4F88F, #FFFFFF);" VBox.vgrow="NEVER">
+         <children>
+            <AnchorPane layoutY="60.0" prefHeight="660.0" prefWidth="1280.0">
+               <children>
+                  <HBox layoutX="200.0" layoutY="60.0">
+                     <children>
+                        <ImageView fx:id="bookCover" fitHeight="500.0" fitWidth="300.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/book.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="544.0" prefWidth="581.0">
+                           <children>
+                              <Label fx:id="bookName" prefHeight="17.0" prefWidth="571.0" styleClass="biblitera-logo" text="É Assim que Acaba" textFill="#1f2947">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="30.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <ScrollPane hbarPolicy="NEVER" layoutY="121.0" prefHeight="315.0" prefWidth="573.0" stylesheets="@css/style.css">
+                                 <content>
+                                    <Label fx:id="bookDescription" alignment="TOP_LEFT" prefWidth="571.0" stylesheets="@css/style.css" text="Quando os dois se apaixonam, Lily se vê no meio de um relacionamento turbulento que não é o que ela esperava. Mas será que ela conseguirá enxergar isso, por mais doloroso que seja? É assim que acaba é uma narrativa poderosa sobre a força necessária para fazer as escolhas certas nas situações mais difíceis." textAlignment="JUSTIFY" textFill="#1e2945a3" wrapText="true">
+                                       <font>
+                                          <Font name="Source Sans 3 Regular" size="24.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets left="25.0" right="25.0" />
+                                       </padding>
+                                    </Label>
+                                 </content>
+                              </ScrollPane>
+                              <Label fx:id="bookCopies" layoutX="-1.0" layoutY="75.0" prefHeight="25.0" prefWidth="571.0" styleClass="biblitera-logo" text="5 unidades disponíveis" textFill="#1e2945a3">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <Button fx:id="borrowButton" layoutX="20.0" layoutY="449.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="531.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #7B7EED;" text="solicitar empréstimo" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="bookAuthor" layoutY="35.0" prefHeight="25.0" prefWidth="571.0" styleClass="biblitera-logo" text="Colleen Hoover" textFill="#1e2945a3">
+                                 <font>
+                                    <Font name="Source Sans 3 Regular" size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

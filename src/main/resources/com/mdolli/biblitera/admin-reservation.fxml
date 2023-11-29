@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="admin-button" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="279.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="219.0" text="Solicitação de empréstimo">
+                                 <font>
+                                    <Font name="Source Sans 3 Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="reservationUser" layoutY="31.200000762939453" prefHeight="21.0" prefWidth="221.0" text="por Andrey" textFill="#1e2945a1">
+                                 <font>
+                                    <Font name="Source Sans 3 Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <HBox prefHeight="80.0" prefWidth="227.0">
+                           <children>
+                              <ImageView fx:id="bookCover" fitHeight="80.0" fitWidth="50.0" pickOnBounds="true" styleClass="book-cover">
+                                 <image>
+                                    <Image url="@images/book.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label fx:id="bookName" prefHeight="26.0" prefWidth="330.0" text="É Assim que Acaba">
+                                       <font>
+                                          <Font name="Source Sans 3 Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="bookAuthor" prefHeight="0.0" prefWidth="358.0" text="É Assim que Acaba" textFill="#1e2945a1">
+                                       <font>
+                                          <Font name="Source Sans 3 Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="bookCopies" prefHeight="0.0" prefWidth="358.0" text="5 unidades restantes" textFill="#1e2945a1">
+                                       <font>
+                                          <Font name="Source Sans 3 Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="-0.0" />
+               </padding>
+               <children>
+                  <Group>
+                     <children>
+                        <Button fx:id="acceptButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #7B7EED;" text="aceitar empréstimo" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="denyButton" layoutX="260.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #545187;" text="recusar empréstimo" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Group>
+                  <Region prefHeight="51.0" prefWidth="67.0" HBox.hgrow="ALWAYS" />
+                  <Group>
+                     <children>
+                        <Button fx:id="historyButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #DE4F60;" text="histórico do usuário" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="viewBookButton" layoutX="260.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-min-height: 50px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #EDB27B;" text="ver livro" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans 3 Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Group>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
